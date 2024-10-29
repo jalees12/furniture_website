@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> ELYSIUM the real space for your choice </title>
+    <link rel="shortcut icon" href="LOGO1.png">
+    <link rel="stylesheet" href="img.css" />
+  </head>
+  <body>
+    <header class="header">
+        
+
+        <nav class="navbar">
+          <a href="index.html" style="--i:1;">Home</a>
+          <a href="360.html" style="--i:2;" >360 View</a>
+        <a href="About.html" style="--i:3;" >About</a>
+           <a href="review.html" style="--i:4;">Review</a>
+         <a href="featured.html" style="--i:5;">Services</a>
+           <a href="contact.html" style="--i:6;">contact</a>
+    </nav>
+
+    </header>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="classicg.webp" style="--i:1;" alt="1" />
+          <h1>CLASSIC</h1>
+          <div class="details">
+            <h2>CLASSIC</h2>
+            <p>GAMING ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="girlsg.webp" style="--i:2;" alt="2" />
+          <h1>GIRLS</h1>
+          <div class="details">
+            <h2>GIRLS</h2>
+            <p>GAMING ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="carloversg.jpg" style="--i:3;" alt="3" />
+          <h1>CAR</h1>
+          <div class="details">
+            <h2>CAR</h2>
+            <p>GAMING ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="moderng.jpeg" style="--i:4;" alt="4" />
+          <h1>MODERN</h1>
+          <div class="details">
+            <h2>MODERN</h2>
+            <p>GAMING ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="normalg.jpg" style="--i:5;" alt="5" />
+          <h1></h1>
+          <div class="details">
+            <h2>NORMAL</h2>
+            <p>GAMING ROOM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="img.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

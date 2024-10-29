@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> ELYSIUM the real space for your choice </title>
+    <link rel="shortcut icon" href="LOGO1.png">
+    <link rel="stylesheet" href="img.css" />
+  </head>
+  <body>
+    <header class="header">
+        
+
+        <nav class="navbar">
+          <a href="index.html" style="--i:1;">Home</a>
+          <a href="360view.html" style="--i:2;" >360 View</a>
+        <a href="About.html" style="--i:3;" >About</a>
+           <a href="review.html" style="--i:4;">Review</a>
+         <a href="featured.html" style="--i:5;">Services</a>
+           <a href="contact.html" style="--i:6;">contact</a>
+    </nav>
+
+    </header>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="christianp.jpg" style="--i:1;" alt="1" />
+          <h1>CHRISTIAN</h1>
+          <div class="details">
+            <h2>CHRISTIAN</h2>
+            <p>PRAYER ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="hindup.jpg" style="--i:2;" alt="2" />
+          <h1>HINDU</h1>
+          <div class="details">
+            <h2>HINDU</h2>
+            <p>PRAYER ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="buddhistp.jpg!bw700" style="--i:3;" alt="3" />
+          <h1>BUDDHIST</h1>
+          <div class="details">
+            <h2>BUDDHIST</h2>
+            <p>PRAYER ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="muslimp.webp" style="--i:4;" alt="4" />
+          <h1>MUSLIM</h1>
+          <div class="details">
+            <h2>MUSLIM</h2>
+            <p>PRAYER ROOM</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="jewishp.jpg" style="--i:5;" alt="5" />
+          <h1>JEWISH</h1>
+          <div class="details">
+            <h2>JEWISH</h2>
+            <p>PRAYER ROOM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="img.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
