@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2/familu=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+
+body {
+    background: #000000;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    top: -200px;
+    z-index: -1;
+}
+
+.logo {
+    width: 100px; 
+    margin-right: 20px; 
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 10%;
+    background: rgba(0, 0, 0, 0.374);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+
+.logo{
+    
+    size: 500px ;
+    align-items:center;
+    left: 100%;
+    width: 100px;
+    height: 100px;
+  font-size: 30px;
+  color:  rgb(6, 165, 218);
+  text-decoration: none;
+  font-weight: 600;
+  height: 100px;
+  animation: slideright .5s ease forwards;
+  animation-delay: 1;
+  cursor: default;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    top: -200px;
+    z-index: -1;
+    width: 2200px;
+}
+.logo img {
+   
+    left: 100%;
+    width: 100px;
+    height: 100px;
+  font-size: 30px;
+  color:   rgb(6, 165, 218);
+  text-decoration: none;
+  font-weight: 600;
+  height: 100px;
+  
+}
+
+nav {
+    margin-left: auto; /* Pushes navigation to the right */
+}
+
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color:      rgb(6, 165, 218);
+
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+    
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transform: rotate(45deg);
+    transition: .5s;
+    opacity: o;
+    animation: slideleft .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+    
+
+.social-media a:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+.social-media a i{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    transform: rotate(-45deg);
+}
+
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 8% 0;
+   overflow: hidden; 
+}
+
+.home-content{
+    
+    max-width: 630px;
+
+}
+
+.home-content h1 {
+    font-size: 50px;
+    color: rgb(6, 165, 218);
+    line-height: 1.2;
+    opacity: 0;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content h3 {
+    font-size: 40px;
+    color:  rgb(255, 255, 250);
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.home-content p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 15px 0 30px;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.btn{
+    display: inline-block;
+    padding: 16px 32px;
+    background: rgb(6, 165, 218);
+    border: 2px solid      rgb(6, 165, 218);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #f6f6f6;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: 2s;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+    border: none;
+
+
+}
+.btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 6px; 
+
+}
+
+.btn::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,#0d00ff,#ff0000,#02e6ff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 6px;
+    opacity: 1;
+}
+textarea{
+    width: 500px;
+    display: inline-block;
+    padding: 16px 32px;
+    background:  rgb(115, 102, 102);
+    border: 2px solid    rgb(0, 0, 0);
+    box-shadow: 0 0 10px   rgb(6, 165, 218);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #f6f6f6;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+    animation-delay: 2s;
+    outline: none;
+    cursor: pointer;
+    z-index: 0;
+    border: none;
+height: 50px
+
+}
+
+.btn:hover::before{
+    opacity: 1;
+}
+ .btn:active::after{
+    background: transparent;
+ }
+
+
+ .btn:active{
+    color: #000000;
+    font-weight: bold;
+ }
+
+
+.btn:hover {
+    background: transparent;
+    color:    rgb(255, 254, 254);
+}
+
+
+.home-img {
+    position: relative;
+    right: -7%;
+    width: 400px;
+    height: 450px;
+    transform: rotate(45deg);
+}
+
+.home-img .rhombus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 25px solid     rgb(6, 165, 218);
+    box-shadow: -15px 15px 15px rgb(54, 48, 48);
+    animation: slidebottom 1s ease forwards;
+    animation-delay: 3;
+    height: 400px;
+}
+
+.home-img .rhombus img{
+    position: absolute;
+    max-width: 750px;
+    transform: rotate(-45deg);
+    right: -60px;
+    left: -50%;
+    top: 20%;;
+}
+
+.home .rhombus2{
+    position: absolute;
+    top: -35%;
+    right: -25%;
+    width: 700px;
+    height: 700px;
+    background:      rgb(6, 165, 218);
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+/*keyframes animation*/
+@keyframes  slideright {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    }
+ 
+    @keyframes slidetop{
+        0% {
+            transform: translateY(100px);
+            opacity: 0;
+        } 
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slidebottom{
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+         100%{
+            transform: translateY(0);
+            opacity: 1;
+         }
+
+    }
+
+
+    @keyframes slideleft {
+        0%{
+            transform:translateX(100px) rotate(45deg);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0) rotate(45deg);
+        opacity: 1;
+    }
+    }
+
+    @keyframes glowing{
+        0%{background-position: 0 0;}
+        50%{background-position: 400% 0;}
+        100%{background-position: 0 0;}
+    }
+
+
+   .featured
+   body.home-img .rhombus img{
+    position: absolute;
+    max-width: 750px;
+    transform: rotate(-45deg);
+    right: -60px;
+    left: -50%;
+    top: -20%;;
+}
+
+ body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:fofo;
+ }
+
+ .image-row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+ }
+
+ .image{
+    width: 200px;
+    height:auto;
+    margin: 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s;
+ }
+
+ .gallery-image:hover{
+    transform: scale(1.05);
+ }
+
+   
+.explore.html
+*{ margin: 0;
+    padding: 0;
+    font-family:  'robot', sans-serif;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(bg.png);
+        background-position: center;
+        background-size: cover;
+    
+    }
